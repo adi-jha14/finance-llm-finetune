@@ -77,6 +77,15 @@ LoraConfig(
 | Max seq length | 512 tokens | Covers most Q&A pairs; longer = more memory |
 | Optimizer | paged_adamw_8bit | Memory-efficient variant of Adam |
 
+### Training run summary
+
+| Metric | Value |
+|---|---|
+| Trainable parameters | 4,505,600 / 1,104,553,984 (0.41%) |
+| Training time | ~23 minutes 39 seconds (T4 GPU) |
+| Final training loss | 1.3265 |
+| Final validation loss | 1.3818 |
+
 ---
 
 ## How to Run
@@ -98,21 +107,15 @@ LoraConfig(
 
 ## Results
 
-> **Note**: Fill in these numbers after running the notebook.
-
 ### Perplexity (lower = better)
 
 | | Perplexity |
 |---|---|
-| Baseline (before fine-tuning) | `[FILL IN]` |
-| After fine-tuning (3 epochs) | `[FILL IN]` |
-| Improvement | `[FILL IN]%` |
+| Baseline (before fine-tuning) | `9.19` |
+| After fine-tuning (3 epochs) | `3.82` |
+| Improvement | `+58.4%` |
 
 *Measured on 100 held-out validation examples from finance-alpaca.*
-
-### Qualitative comparison
-
-> Copy the output from Cell 17 of the notebook here after running.
 
 ---
 
