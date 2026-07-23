@@ -1,0 +1,19 @@
+# Model checkpoints and saved weights (too large for GitHub)
+checkpoints/
+finance-tinyllama-qlora/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
